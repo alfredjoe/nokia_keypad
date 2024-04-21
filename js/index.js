@@ -430,7 +430,7 @@ keys.forEach(key => {
         }
         else if(keyText==='0')
         {
-            inputField.value += keyText;
+            inputField.value += '0';
         }
         else if (keyText === '#') {
             // Handle special action for #
@@ -441,16 +441,16 @@ keys.forEach(key => {
             inputField.value = inputField.value.slice(0, -1);
         } else if (keyText === 'Enter') {
             if(password==inputField.value){
-                alert('Login Successful!');
+                displayNotification('Successful!');
             }
             else{
-                displayNotification('Successful!');
+                alert('Incorrect Password. Please try again.');
             }
         }
     }
     else{
 if(password==inputField.value){
-    alert('Login Successful!');
+    displayNotification('Successful!');
 }else{
     alert('Incorrect Password. Please try again.');
 }
