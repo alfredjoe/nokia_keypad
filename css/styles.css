@@ -16,7 +16,7 @@ body {
   justify-content: center;
   align-items: center;
     overflow:hidden;
-  height:100vh;
+  height:100svh;
   flex-direction: column;
   margin: -10px 10px;
 }
@@ -65,7 +65,7 @@ body {
     max-width: 1008px;
     width: 100%;
     height: 100px;
-    margin-top:-25px;
+    margin-top:-23px;
     margin-bottom: 15px;
     border: none;
     outline: none;
