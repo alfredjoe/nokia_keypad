@@ -453,7 +453,14 @@ keys.forEach(key => {
         
         else if (keyText === '#') {
             // Handle special action for #
+            if(count_1<1){
             check=true;
+                count_1++
+            }
+            else{
+            check=false;
+                count_1--;
+            }
          }
          else if (keyText === 'backspace') {
             // Handle backspace
