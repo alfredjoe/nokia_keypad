@@ -14,6 +14,7 @@ function resetTimer() {
     clearTimeout(timer); // Clear the existing timer
     timer = setTimeout(() => {
         count=1;
+        count_1=0;
         check=false; 
         temp2=inputField.value;// Clear the input field after 5 seconds of inactivity
     }, 1000); // 5000 milliseconds = 5 seconds
