@@ -16,7 +16,7 @@ body {
   justify-content: center;
   align-items: center;
     overflow:hidden;
-  height:95vh;
+  height:100vh;
   flex-direction: column;
   margin: 0px 10px;
 }
