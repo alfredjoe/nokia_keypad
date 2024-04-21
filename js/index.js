@@ -77,7 +77,7 @@ keys.forEach(key => {
                     temp2=inputField.value;
                     check=false;
                     temp3=keyText;
-                    inputField.value=temp2+'E';
+                    inputField.value=temp2+'D';
                 }
             }
             else if (keyText === '4') {
