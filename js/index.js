@@ -235,7 +235,7 @@ keys.forEach(key => {
             inputField.value += '0';
         }
     }
-        else if(check===false&&temp3=keyText){
+        else if(check===false&&temp3!=keyText){
             // Append the number to the input field value
             if (keyText === '2') {
                 if (temp == keyText) {
