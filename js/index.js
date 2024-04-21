@@ -5,7 +5,7 @@ let temp=0;
 let temp2='';
 let check=false;
 let timer; 
-let count_1='';
+let count_1=0;
 let temp3 ='';
 let password='ESCAPE ROOM';
 // Get the input field
