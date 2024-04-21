@@ -230,7 +230,10 @@ keys.forEach(key => {
             else if(keyText==='1')
         {
             inputField.value += '1';
-            }   
+            }   else if(keyText==='0')
+        {
+            inputField.value += '0';
+        }
     }
         else{
             // Append the number to the input field value
@@ -420,7 +423,10 @@ keys.forEach(key => {
             else if(keyText==='1')
         {
             inputField.value += '1';
-            }                 
+            } else if(keyText==='0')
+        {
+            inputField.value += '0';
+        }                
 
     }
     }
@@ -428,10 +434,7 @@ keys.forEach(key => {
             // Handle backspace
             inputField.value += ' ';
         }
-        else if(keyText==='0')
-        {
-            inputField.value += '0';
-        }
+        
         else if (keyText === '#') {
             // Handle special action for #
             check=true;
