@@ -31,8 +31,7 @@ keys.forEach(key => {
             if (keyText === '2') {
                 if (temp == keyText) {
                     if (count === 1) {
-                        temp2=inputField.value;
-                        check=false;
+                        
                         inputField.value=temp2+'A';
                         count = 2;
                     } else if (count === 2) {
@@ -57,8 +56,7 @@ keys.forEach(key => {
             else if (keyText === '3') {
                 if (temp == keyText) {
                     if (count === 1) {
-                        temp2=inputField.value;
-                        check=false;
+                        
                         inputField.value=temp2+'D';
                         count = 2;
                     } else if (count === 2) {
@@ -83,8 +81,7 @@ keys.forEach(key => {
             else if (keyText === '4') {
                 if (temp == keyText) {
                     if (count === 1) {
-                        temp2=inputField.value;
-                        check=false;
+                        
                         inputField.value=temp2+'G';
                         count = 2;
                     } else if (count === 2) {
@@ -109,8 +106,7 @@ keys.forEach(key => {
             else if (keyText === '5') {
                 if (temp == keyText) {
                     if (count === 1) {
-                        temp2=inputField.value;
-                        check=false;
+                        
                         inputField.value=temp2+'J';
                         count = 2;
                     } else if (count === 2) {
@@ -135,8 +131,7 @@ keys.forEach(key => {
             else if (keyText === '6') {
                 if (temp == keyText) {
                     if (count === 1) {
-                        temp2=inputField.value;
-                        check=false;
+                        
                         inputField.value=temp2+'M';
                         count = 2;
                     } else if (count === 2) {
@@ -161,8 +156,7 @@ keys.forEach(key => {
             else if (keyText === '7') {
                 if (temp == keyText) {
                     if (count === 1) {
-                        temp2=inputField.value;
-                        check=false;
+                        
                         inputField.value=temp2+'P';
                         count = 2;
                     } else if (count === 2) {
@@ -191,8 +185,7 @@ keys.forEach(key => {
             else if (keyText === '8') {
                 if (temp == keyText) {
                     if (count === 1) {
-                        temp2=inputField.value;
-                        check=false;
+                        
                         inputField.value=temp2+'T';
                         count = 2;
                     } else if (count === 2) {
@@ -217,8 +210,7 @@ keys.forEach(key => {
             else if (keyText === '9') {
                 if (temp == keyText) {
                     if (count === 1) {
-                        temp2=inputField.value;
-                        check=false;
+                        
                         inputField.value=temp2+'W';
                         count = 2;
                     } else if (count === 2) {
@@ -256,8 +248,7 @@ keys.forEach(key => {
             if (keyText === '2') {
                 if (temp == keyText) {
                     if (count === 1) {
-                        temp2=inputField.value;
-                        check=false;
+                        
                         inputField.value=temp2+'a';
                         count = 2;
                     } else if (count === 2) {
@@ -280,8 +271,7 @@ keys.forEach(key => {
             else if (keyText === '3') {
                 if (temp == keyText) {
                     if (count === 1) {
-                        temp2=inputField.value;
-                        check=false;
+                        
                         inputField.value=temp2+'d';
                         count = 2;
                     } else if (count === 2) {
@@ -304,8 +294,7 @@ keys.forEach(key => {
             else if (keyText === '4') {
                 if (temp == keyText) {
                     if (count === 1) {
-                        temp2=inputField.value;
-                        check=false;
+                        
                         inputField.value=temp2+'g';
                         count = 2;
                     } else if (count === 2) {
@@ -328,8 +317,7 @@ keys.forEach(key => {
             else if (keyText === '5') {
                 if (temp == keyText) {
                     if (count === 1) {
-                        temp2=inputField.value;
-                        check=false;
+                        
                         inputField.value=temp2+'j';
                         count = 2;
                     } else if (count === 2) {
@@ -352,8 +340,7 @@ keys.forEach(key => {
             else if (keyText === '6') {
                 if (temp == keyText) {
                     if (count === 1) {
-                        temp2=inputField.value;
-                        check=false;
+                        
                         inputField.value=temp2+'m';
                         count = 2;
                     } else if (count === 2) {
@@ -376,8 +363,7 @@ keys.forEach(key => {
             else if (keyText === '7') {
                 if (temp == keyText) {
                     if (count === 1) {
-                        temp2=inputField.value;
-                        check=false;
+                        
                         inputField.value=temp2+'p';
                         count = 2;
                     } else if (count === 2) {
@@ -404,8 +390,7 @@ keys.forEach(key => {
             else if (keyText === '8') {
                 if (temp == keyText) {
                     if (count === 1) {
-                        temp2=inputField.value;
-                        check=false;
+                        
                         inputField.value=temp2+'t';
                         count = 2;
                     } else if (count === 2) {
@@ -428,8 +413,7 @@ keys.forEach(key => {
             else if (keyText === '9') {
                 if (temp == keyText) {
                     if (count === 1) {
-                        temp2=inputField.value;
-                        check=false;
+                        
                         inputField.value=temp2+'w';
                         count = 2;
                     } else if (count === 2) {
