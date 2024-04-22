@@ -464,12 +464,6 @@ keys.forEach(key => {
             check=false;
                 count_1--;
             }
-             if(check==true||temp3==keyText){
-        key.style.borderColor = 'red';
-        }
-        else(check=!true||temp3=!keyText){
-        key.style.borderColor = 'white';
-        }
          }
          else if (keyText === 'backspace') {
             // Handle backspace
