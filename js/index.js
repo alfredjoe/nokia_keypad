@@ -476,12 +476,14 @@ keys.forEach(key => {
             if(password==inputField.value){
             
                 inputField.value='***ACCESS GRANTED***';
+                 granted();
                 blinkAndClear_1(inputField, 5); 
 
             }
             else{
             
                 inputField.value='***ACCESS DENIED***';
+                denied();
                 blinkAndClear_2(inputField, 5); 
 
                 
@@ -491,10 +493,12 @@ keys.forEach(key => {
     else{
 if(password==inputField.value){
     inputField.value='***ACCESS GRANTED***';
+     granted();
     blinkAndClear_1(inputField, 5); 
 
 }else{
     inputField.value='***ACCESS DENIED***';
+    denied();
    blinkAndClear_2(inputField, 5); 
 }
     }
@@ -546,6 +550,14 @@ function playTouchSoundAndVibrate() {
       navigator.vibrate(100);
     }
   }
+function granted(){
+let audio_1 = new Audio('/to/granted.wav');
+    audio_1.play();
+}
+function denied(){
+let audio_2 = new Audio('/to/denied_1.wav');
+    audio_2.play();
+}
   // Call displayNotification('Login Successful!') when login is successful
   
 resetTimer();
