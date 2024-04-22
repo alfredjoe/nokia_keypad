@@ -476,23 +476,13 @@ keys.forEach(key => {
             
                 inputField.value='***ACCESS GRANTED***';
                 blinkAndClear(inputField);
-                inputField.value='***ACCESS GRANTED***';
-                blinkAndClear(inputField);
-                inputField.value='***ACCESS GRANTED***';
-                blinkAndClear(inputField);
-                inputField.value='***ACCESS GRANTED***';
-                blinkAndClear(inputField);
+
             }
             else{
             
                 inputField.value='***ACCESS DENIED***';
                 blinkAndClear(inputField);
-                inputField.value='***ACCESS DENIED***';
-    blinkAndClear(inputField);
-                inputField.value='***ACCESS DENIED***';
-    blinkAndClear(inputField);
-                inputField.value='***ACCESS DENIED***';
-    blinkAndClear(inputField);
+        blinkAndClear(inputField);
                 
             }
         }
@@ -501,21 +491,11 @@ keys.forEach(key => {
 if(password==inputField.value){
     inputField.value='***ACCESS GRANTED***';
     blinkAndClear(inputField);
-    inputField.value='***ACCESS GRANTED***';
-                blinkAndClear(inputField);
-    inputField.value='***ACCESS GRANTED***';
-                blinkAndClear(inputField);
-    inputField.value='***ACCESS GRANTED***';
-                blinkAndClear(inputField);
+
 }else{
     inputField.value='***ACCESS DENIED***';
     blinkAndClear(inputField);
-    inputField.value='***ACCESS DENIED***';
-    blinkAndClear(inputField);
-    inputField.value='***ACCESS DENIED***';
-    blinkAndClear(inputField);
-    inputField.value='***ACCESS DENIED***';
-    blinkAndClear(inputField);
+blinkAndClear(inputField);
 }
     }
     });
