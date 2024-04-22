@@ -504,8 +504,10 @@ function blinkAndClear(element, times) {
         element.classList.add('blink');
         setTimeout(() => {
             element.classList.remove('blink');
-            blinkAndClear(element, times - 1); // Recursively call blinkAndClear with reduced times
-        }, 200); // Adjust blink speed (200 milliseconds in this example)
+            setTimeout(() => {
+                blinkAndClear(element, times - 1); // Recursively call blinkAndClear with reduced times
+            }, 200); // Adjust delay between blinks (200 milliseconds in this example)
+        }, 200); // Adjust blink duration (200 milliseconds in this example)
     } else {
         setTimeout(() => {
             element.value = ''; // Clear the input field after blinking
