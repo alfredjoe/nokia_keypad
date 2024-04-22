@@ -509,7 +509,7 @@ function blinkAndClear(element, times) {
     } else {
         setTimeout(() => {
             element.value = ''; // Clear the input field after blinking
-        }, 500); // Adjust delay before clearing input field (500 milliseconds in this example)
+        }, 200); // Adjust delay before clearing input field (500 milliseconds in this example)
     }
 }
   // Call displayNotification('Login Successful!') when login is successful
