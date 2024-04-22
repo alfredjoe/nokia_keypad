@@ -506,7 +506,7 @@ function blinkAndClear_1(element, times) {
            
             element.value = ''; 
             setTimeout(() => {
-                blinkAndClear(element, times - 1); // Recursively call blinkAndClear with reduced times
+                blinkAndClear_1(element, times - 1); // Recursively call blinkAndClear with reduced times
             }, 200); // Adjust delay between blinks (200 milliseconds in this example)
         }, 200); // Adjust blink duration (200 milliseconds in this example)
     } else {
@@ -522,7 +522,7 @@ function blinkAndClear_2(element, times) {
            
             element.value = ''; 
             setTimeout(() => {
-                blinkAndClear(element, times - 1); // Recursively call blinkAndClear with reduced times
+                blinkAndClear_2(element, times - 1); // Recursively call blinkAndClear with reduced times
             }, 200); // Adjust delay between blinks (200 milliseconds in this example)
         }, 200); // Adjust blink duration (200 milliseconds in this example)
     } else {
