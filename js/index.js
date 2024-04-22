@@ -499,17 +499,13 @@ if(password==inputField.value){
     }
     });
 });
-function blinkAndClear(element, remainingTimes) {
-    if (remainingTimes > 0) {
+function blinkAndClear(element, times) {
+    if (times > 0) {
+        element.classList.add('blink');
         setTimeout(() => {
-            element.classList.add('blink');
-            setTimeout(() => {
-                element.classList.remove('blink');
-                setTimeout(() => {
-                    blinkAndClear(element, remainingTimes - 1);
-                }, 200); // Adjust blink speed (200 milliseconds in this example)
-            }, 200); // Adjust blink duration (200 milliseconds in this example)
-        }, 200); // Adjust delay before starting next blink (200 milliseconds in this example)
+            element.classList.remove('blink');
+            blinkAndClear(element, times - 1); // Recursively call blinkAndClear with reduced times
+        }, 200); // Adjust blink speed (200 milliseconds in this example)
     } else {
         setTimeout(() => {
             element.value = ''; // Clear the input field after blinking
