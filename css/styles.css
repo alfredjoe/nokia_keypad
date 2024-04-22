@@ -49,6 +49,7 @@ body {
     margin: 4px;
     transition: .2s;
     z-index: 5;
+    border: 2px solid #FFFFFF;
     border-radius:6.15px;
 }
 
@@ -82,7 +83,7 @@ body {
 
 .keys.active {
     background-color: #333;
-    color: red;
+    color: #fff;
 }
 
 .keys.remove {
