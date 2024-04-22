@@ -504,6 +504,7 @@ function blinkAndClear(element, times) {
         element.classList.add('blink');
         setTimeout(() => {
             element.classList.remove('blink');
+            console.print('1');
             setTimeout(() => {
                 blinkAndClear(element, times - 1); // Recursively call blinkAndClear with reduced times
             }, 200); // Adjust delay between blinks (200 milliseconds in this example)
