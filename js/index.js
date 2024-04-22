@@ -509,7 +509,7 @@ if(password==inputField.value){
                 blinkAndClear(inputField);
 }else{
     inputField.value='***ACCESS DENIED***';
-    blinkAndClear(inputField);\
+    blinkAndClear(inputField);
     inputField.value='***ACCESS DENIED***';
     blinkAndClear(inputField);
     inputField.value='***ACCESS DENIED***';
