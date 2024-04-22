@@ -551,11 +551,11 @@ function playTouchSoundAndVibrate() {
     }
   }
 function granted(){
-let audio_1 = new Audio('/to/granted.wav');
+let audio_1 = new Audio('/to/granted.mp3');
     audio_1.play();
 }
 function denied(){
-let audio_2 = new Audio('/to/denied_1.wav');
+let audio_2 = new Audio('/to/denied_1.mp3');
     audio_2.play();
 }
   // Call displayNotification('Login Successful!') when login is successful
