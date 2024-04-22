@@ -26,6 +26,7 @@ keys.forEach(key => {
     key.addEventListener('click', function() {
         let keyText = this.textContent;
         resetTimer();
+        playTouchSoundAndVibrate();
         if(inputField.value.length < 14){
         // Check if the clicked key is a number (1-9)
         if (!isNaN(keyText)) {
@@ -534,6 +535,17 @@ function blinkAndClear_2(element, times) {
 window.addEventListener('load', function() {
     inputField.value = '';
 });
+function playTouchSoundAndVibrate() {
+    // Create an Audio object with the path to the sound file
+    let audio = new Audio('/to/touch-sound.mp3');
+    // Play the sound
+    audio.play();
+    // Check if the device supports vibration
+    if ("vibrate" in navigator) {
+      // Vibrate for 100 milliseconds
+      navigator.vibrate(100);
+    }
+  }
   // Call displayNotification('Login Successful!') when login is successful
   
 resetTimer();
