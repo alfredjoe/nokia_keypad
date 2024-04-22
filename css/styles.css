@@ -111,7 +111,7 @@ body.active {
 }
 
 .blink {
-  animation: blink 1s infinite;
+  animation: blink .1s infinite;
 }
 
   
