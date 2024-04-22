@@ -7,6 +7,7 @@ let check=false;
 let timer; 
 let count_1=0;
 let temp3 ='';
+
 let password='ESCAPE ROOM';
 // Get the input field
 let inputField = document.querySelector('.text');
@@ -474,26 +475,34 @@ keys.forEach(key => {
             if(password==inputField.value){
             
                 inputField.value='***ACCESS GRANTED***';
-            
+                blinkAndClear(inputField);
             }
             else{
             
                 inputField.value='***ACCESS DENIED***';
-            
+                blinkAndClear(inputField);
             }
         }
     }
     else{
 if(password==inputField.value){
     inputField.value='***ACCESS GRANTED***';
+    blinkAndClear(inputField);
 }else{
     inputField.value='***ACCESS DENIED***';
+    blinkAndClear(inputField);
 }
     }
     });
 });
 
-  
+function blinkAndClear(element) {
+    element.classList.add('blink');
+    setTimeout(() => {
+        element.classList.remove('blink');
+        element.value = ''; // Clear the input field after blinking
+    }, 3000); // Remove the blink class and clear input field after 3 seconds (adjust as needed)
+}
   // Call displayNotification('Login Successful!') when login is successful
   
 resetTimer();
