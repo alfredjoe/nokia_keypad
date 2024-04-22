@@ -475,13 +475,13 @@ keys.forEach(key => {
             if(password==inputField.value){
             
                 inputField.value='***ACCESS GRANTED***';
-                blinkAndClear(inputField, 5); 
+                blinkAndClear_1(inputField, 5); 
 
             }
             else{
             
                 inputField.value='***ACCESS DENIED***';
-                blinkAndClear(inputField, 5); 
+                blinkAndClear_2(inputField, 5); 
 
                 
             }
@@ -490,18 +490,34 @@ keys.forEach(key => {
     else{
 if(password==inputField.value){
     inputField.value='***ACCESS GRANTED***';
-    blinkAndClear(inputField, 5); 
+    blinkAndClear_1(inputField, 5); 
 
 }else{
     inputField.value='***ACCESS DENIED***';
-   blinkAndClear(inputField, 5); 
+   blinkAndClear_2(inputField, 5); 
 }
     }
     });
 });
-function blinkAndClear(element, times) {
+function blinkAndClear_1(element, times) {
     if (times > 0) {
         element.value ='***ACCESS GRANTED***' ; 
+        setTimeout(() => {
+           
+            element.value = ''; 
+            setTimeout(() => {
+                blinkAndClear(element, times - 1); // Recursively call blinkAndClear with reduced times
+            }, 200); // Adjust delay between blinks (200 milliseconds in this example)
+        }, 200); // Adjust blink duration (200 milliseconds in this example)
+    } else {
+        setTimeout(() => {
+            element.value = ''; // Clear the input field after blinking
+        }, 500); // Adjust delay before clearing input field (500 milliseconds in this example)
+    }
+}
+function blinkAndClear_2(element, times) {
+    if (times > 0) {
+        element.value ='***ACCESS DENIED***' ; 
         setTimeout(() => {
            
             element.value = ''; 
