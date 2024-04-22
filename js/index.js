@@ -497,6 +497,12 @@ if(password==inputField.value){
    blinkAndClear_2(inputField, 5); 
 }
     }
+        if(check==true||temp3==keyText){
+        key.style.borderColor = 'red';
+        }
+        else(check=!true||temp3=!keyText){
+        key.style.borderColor = 'white';
+        }
     });
 });
 function blinkAndClear_1(element, times) {
