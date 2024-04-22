@@ -475,13 +475,13 @@ keys.forEach(key => {
             if(password==inputField.value){
             
                 inputField.value='***ACCESS GRANTED***';
-                blinkAndClear(inputField);
+                blinkAndClear(inputField, 5); 
 
             }
             else{
             
                 inputField.value='***ACCESS DENIED***';
-                blinkAndClear(inputField);
+                blinkAndClear(inputField, 5); 
 
                 
             }
@@ -490,22 +490,27 @@ keys.forEach(key => {
     else{
 if(password==inputField.value){
     inputField.value='***ACCESS GRANTED***';
-    blinkAndClear(inputField);
+    blinkAndClear(inputField, 5); 
 
 }else{
     inputField.value='***ACCESS DENIED***';
-    blinkAndClear(inputField);
+   blinkAndClear(inputField, 5); 
 }
     }
     });
 });
-
-function blinkAndClear(element) {
-    element.classList.add('blink');
-    setTimeout(() => {
-        element.classList.remove('blink');
-        element.value = ''; // Clear the input field after blinking
-    }, 1000); // Remove the blink class and clear input field after 3 seconds (adjust as needed)
+function blinkAndClear(element, times) {
+    if (times > 0) {
+        element.classList.add('blink');
+        setTimeout(() => {
+            element.classList.remove('blink');
+            blinkAndClear(element, times - 1); // Recursively call blinkAndClear with reduced times
+        }, 200); // Adjust blink speed (200 milliseconds in this example)
+    } else {
+        setTimeout(() => {
+            element.value = ''; // Clear the input field after blinking
+        }, 500); // Adjust delay before clearing input field (500 milliseconds in this example)
+    }
 }
   // Call displayNotification('Login Successful!') when login is successful
   
