@@ -20,7 +20,7 @@ function resetTimer() {
         temp2=inputField.value;// Clear the input field after 5 seconds of inactivity
     }, 1000); // 5000 milliseconds = 5 seconds
 }
-inputField.disabled = false;
+inputField.disabled = true;
 // Add click event listener to each key
 keys.forEach(key => {
     key.addEventListener('click', function() {
