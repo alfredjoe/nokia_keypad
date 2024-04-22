@@ -482,7 +482,7 @@ keys.forEach(key => {
             
                 inputField.value='***ACCESS DENIED***';
                 blinkAndClear(inputField);
-        blinkAndClear(inputField);
+
                 
             }
         }
@@ -495,7 +495,6 @@ if(password==inputField.value){
 }else{
     inputField.value='***ACCESS DENIED***';
     blinkAndClear(inputField);
-blinkAndClear(inputField);
 }
     }
     });
@@ -506,7 +505,7 @@ function blinkAndClear(element) {
     setTimeout(() => {
         element.classList.remove('blink');
         element.value = ''; // Clear the input field after blinking
-    }, 200); // Remove the blink class and clear input field after 3 seconds (adjust as needed)
+    }, 1000); // Remove the blink class and clear input field after 3 seconds (adjust as needed)
 }
   // Call displayNotification('Login Successful!') when login is successful
   
