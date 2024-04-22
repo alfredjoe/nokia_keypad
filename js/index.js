@@ -499,22 +499,22 @@ if(password==inputField.value){
     }
     });
 });
-function blinkAndClear(element, times) {
-    let count = 0;
-    const blinkInterval = setInterval(() => {
-        if (count % 2 === 0) {
+function blinkAndClear(element, remainingTimes) {
+    if (remainingTimes > 0) {
+        setTimeout(() => {
             element.classList.add('blink');
-        } else {
-            element.classList.remove('blink');
-        }
-        count++;
-        if (count >= times * 2) {
-            clearInterval(blinkInterval);
             setTimeout(() => {
-                element.value = ''; // Clear the input field after blinking
-            }, 500); // Adjust delay before clearing input field (500 milliseconds in this example)
-        }
-    }, 200); // Adjust blink speed (200 milliseconds in this example)
+                element.classList.remove('blink');
+                setTimeout(() => {
+                    blinkAndClear(element, remainingTimes - 1);
+                }, 200); // Adjust blink speed (200 milliseconds in this example)
+            }, 200); // Adjust blink duration (200 milliseconds in this example)
+        }, 200); // Adjust delay before starting next blink (200 milliseconds in this example)
+    } else {
+        setTimeout(() => {
+            element.value = ''; // Clear the input field after blinking
+        }, 500); // Adjust delay before clearing input field (500 milliseconds in this example)
+    }
 }
   // Call displayNotification('Login Successful!') when login is successful
   
