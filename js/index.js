@@ -512,6 +512,9 @@ function blinkAndClear(element, times) {
         }, 500); // Adjust delay before clearing input field (500 milliseconds in this example)
     }
 }
+window.addEventListener('load', function() {
+    inputField.value = '';
+});
   // Call displayNotification('Login Successful!') when login is successful
   
 resetTimer();
