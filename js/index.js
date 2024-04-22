@@ -501,10 +501,10 @@ if(password==inputField.value){
 });
 function blinkAndClear(element, times) {
     if (times > 0) {
-        element.classList.add('blink');
+        element.value ='***ACCESS GRANTED***' ; 
         setTimeout(() => {
-            element.classList.remove('blink');
-            console.log('1');
+           
+            element.value = ''; 
             setTimeout(() => {
                 blinkAndClear(element, times - 1); // Recursively call blinkAndClear with reduced times
             }, 200); // Adjust delay between blinks (200 milliseconds in this example)
