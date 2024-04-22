@@ -457,7 +457,7 @@ keys.forEach(key => {
             // Handle special action for #
             if(count_1<1){
             check=true;
-                count_1++
+                count_1++;
             }
             else{
             check=false;
@@ -472,33 +472,27 @@ keys.forEach(key => {
         temp2=inputField.value;
         } else if (keyText === 'Enter') {
             if(password==inputField.value){
-                displayNotification('Successful!');
+            
+                inputField.value='***ACCESS GRANTED***';
+            
             }
             else{
-                alert('Incorrect Password. Please try again.');
+            
+                inputField.value='***ACCESS DENIED***';
+            
             }
         }
     }
     else{
 if(password==inputField.value){
-    displayNotification('Successful!');
+    inputField.value='***ACCESS GRANTED***';
 }else{
-    alert('Incorrect Password. Please try again.');
+    inputField.value='***ACCESS DENIED***';
 }
     }
     });
 });
-function displayNotification(message) {
-    const notification = document.querySelector('.notification');
-    const messageElement = notification.querySelector('.message');
-    
-    messageElement.textContent = message;
-    notification.style.display = 'flex'; // Show the notification
-    
-    setTimeout(() => {
-      notification.style.display = 'none'; // Hide the notification after 3 seconds
-    }, 5000);
-  }
+
   
   // Call displayNotification('Login Successful!') when login is successful
   
