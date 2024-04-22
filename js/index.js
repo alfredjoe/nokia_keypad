@@ -537,7 +537,7 @@ window.addEventListener('load', function() {
 });
 function playTouchSoundAndVibrate() {
     // Create an Audio object with the path to the sound file
-    let audio = new Audio('/to/touch-sound.mp3');
+    let audio = new Audio('/to/touch-sound.wav');
     // Play the sound
     audio.play();
     // Check if the device supports vibration
