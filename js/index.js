@@ -471,6 +471,7 @@ keys.forEach(key => {
             inputField.value = inputField.value.slice(0, -1);
              count=1;
             check=false; 
+             temp3=='';
         temp2=inputField.value;
         } else if (keyText === 'Enter') {
             if(password==inputField.value){
