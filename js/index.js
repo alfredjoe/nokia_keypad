@@ -453,6 +453,8 @@ keys.forEach(key => {
         else if (keyText === '_') {
             // Handle backspace
             inputField.value += ' ';
+            check=false; 
+             temp3=='';
         }
         
         else if (keyText === '#') {
