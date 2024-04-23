@@ -477,7 +477,7 @@ keys.forEach(key => {
         temp2=inputField.value;
         } else if (keyText === 'Enter') {
             if(password==inputField.value){
-            textField.style.color = 'green';
+            inputField.style.color = 'green';
                 inputField.value='***ACCESS GRANTED***';
                  granted();
                 blinkAndClear_1(inputField, 5); 
@@ -495,7 +495,7 @@ keys.forEach(key => {
     }
     else{
 if(password==inputField.value){
-    textField.style.color = 'green';
+    inputField.style.color = 'green';
     inputField.value='***ACCESS GRANTED***';
      granted();
     blinkAndClear_1(inputField, 5); 
@@ -521,7 +521,7 @@ function blinkAndClear_1(element, times) {
     } else {
         setTimeout(() => {
             element.value = '';
-            textField.style.color = 'red';// Clear the input field after blinking
+            inputField.style.color = 'red';// Clear the input field after blinking
         }, 500); // Adjust delay before clearing input field (500 milliseconds in this example)
     }
 }
