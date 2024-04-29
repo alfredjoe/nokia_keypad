@@ -8,7 +8,7 @@ let timer;
 let count_1=0;
 let temp3 ='';
 
-let password='ESCAPE ROOM';
+let password='instinct';
 // Get the input field
 let inputField = document.querySelector('.text');
 function resetTimer() {
